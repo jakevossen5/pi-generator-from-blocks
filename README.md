@@ -31,3 +31,9 @@ I found that 9 is about the limit a modern computer can calculate in a
 reasonable time (about 10 seconds on my 2018 Macbook Pro, and similar
 speeds on other computers). It gets _very_ hard to calculate numbers
 above 10. 
+
+Also, the weight of the small block is the smallest possible floating
+point number. This is to try to prevent oveflow, which will happen if
+you start with a small block of mass 1. Eventually there is going to
+be an overflow somewhere because the numbers are so big, but it would
+take hours to generate that number anyway. 
