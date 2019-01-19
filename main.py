@@ -7,7 +7,6 @@ def main():
     v1 = 0
     v2 = -5.0
     
-    print("hello world")
 
     while (v1 < 0.0) or (abs(v1) > v2):
         oldv1 = v1

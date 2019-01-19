@@ -38,5 +38,4 @@ fn main() {
     // m1*v1 = m2*v2
 
     
-    println!("Hello world");
 }
