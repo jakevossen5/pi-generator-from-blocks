@@ -1,6 +1,6 @@
 # pi-generator-from-blocks
 
-[demo](demo.gif)
+![Demo](demo.gif)
 
 This is a way to generate digits of pi by using inelastic collisions
 between an object 100^N larger than the other with a wall and counting
