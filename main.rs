@@ -1,7 +1,7 @@
 fn main() {
     let m1: f64 = 1.0; // Mass of first (small) block
     let m: f64 = 100.0; // Mass of the second (big) block
-    let n: f64 = 5.0;
+    let n: f64 = 8.0;
     let m2 = m.powf(n);
     let mut count: i32 = 0;
     
