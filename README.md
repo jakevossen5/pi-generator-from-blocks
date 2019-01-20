@@ -8,7 +8,7 @@ the number of collisions.
 
 Inspired by [this](https://www.youtube.com/watch?v=HEfHFsfGXjs) video
 by 3Blue1Brown, [technical
-paper](https://www.maths.tcd.ie/~lebed/Galperin).
+paper](https://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pdf).
 
 ## Usage
 
