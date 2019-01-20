@@ -37,3 +37,7 @@ point number. This is to try to prevent oveflow, which will happen if
 you start with a small block of mass 1. Eventually there is going to
 be an overflow somewhere because the numbers are so big, but it would
 take hours to generate that number anyway. 
+
+Each increase in n will take almost exactly 10 times longer to complete than
+the previous n, making this approxemently a O(10^N) algorithm. For
+example: [example](diff.png).
