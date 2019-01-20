@@ -20,8 +20,8 @@ or by downloading and extracting the zip.
 Then, install Rust from the [offical rust
 guide](https://www.rust-lang.org/tools/install).
 
-Compile the program using `rustc -O main.rs -o main`. Then you can run
-the program using `main`. By default, it will start with 1 digit, then
+Compile the program using `RUSTFLAGS="-C target-cpu=native" cargo build --release`. Then you can run
+the program using the executable found in the `target/release/` folder. By default, it will start with 1 digit, then
 2, then 3, etc, until you cancel the program. You can modify the
 starting value by change `n` in the source and recompiling.
 

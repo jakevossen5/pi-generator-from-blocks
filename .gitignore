@@ -12,3 +12,6 @@ Cargo.lock
 main
 
 \.DS_Store
+
+/target
+**/*.rs.bk

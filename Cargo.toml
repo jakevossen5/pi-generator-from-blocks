@@ -1,0 +1,11 @@
+[package]
+name = "pi-generator-from-blocks"
+version = "0.1.0"
+authors = ["Jake Vossen <jakevossen@jakevossen.codes>"]
+edition = "2018"
+
+[dependencies]
+
+[[bin]]
+name = "pi-generator-from-blocks"
+path = "main.rs"
