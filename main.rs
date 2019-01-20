@@ -3,7 +3,7 @@ fn main() {
     let mut n: f64 = 0.0; // Starting at 100^0 (gets 1 digit)
     loop {
         let m1: f64 = f64::MIN_POSITIVE; // Mass of first (small) block
-        let m2 = (100.0_f64).powf(n) * m1; // mass of second (large) block
+        let m2 = (100.0f64).powf(n) * m1; // mass of second (large) block
         let mut count: i128 = 0; // The number of times we have hit something
         
         let mut v1: f64 = 0.0; // velocity of the first (small) block
