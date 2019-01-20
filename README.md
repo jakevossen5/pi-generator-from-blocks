@@ -40,4 +40,4 @@ take hours to generate that number anyway.
 
 Each increase in n will take almost exactly 10 times longer to complete than
 the previous n, making this approxemently a O(10^N) algorithm. For
-example: [example](diff.png).
+example: ![example](diff.png).
