@@ -22,10 +22,6 @@ fn main() {
         let mass_constant_21 = 2.0 * m1 / mass_sum;
         let mass_constant_22 = mass_diff_2 / mass_sum;
 
-        // Some bit masks
-        let sign_bit: u64 = 1 << 63;
-        let positive_mask = !sign_bit;
-
         // collision happens
         while v1 > v2 {
             let oldv1 = v1;
@@ -34,24 +30,12 @@ fn main() {
             // Useful link for the above two lines:
             // https://www.khanacademy.org/science/physics/linear-momentum/elastic-and-inelastic-collisions/a/what-are-elastic-and-inelastic-collisions
 
-
-            // The following lines of code are equivalent to these lines
-            // ```
-            // if v1 < 0.0 {
-            //     v1 = v1 * -1.0; // bounces off wall
-            //     count = count + 1;
-            // }
-            // count = count + 1;
-            // ```
-            // but doing it in this way, via bit-twiddling, means we avoid a branch with that if
-            // statement and therefore don't lose time from incorrect branch prediction
-            let mut v1_bits = v1.to_bits();
-            let wall_bounce = (v1_bits & sign_bit) >> 63;
-            v1_bits &= positive_mask;
-            v1 = f64::from_bits(v1_bits);
-            count += wall_bounce as i128;
             count += 1;
+            // the small block changes direction when colliding with the wall
+            v1 = v1.abs();
         }
+        // between every two block collisions there is a wall collision.
+        count = count * 2 - 1;
 
         let end_time = start_time.elapsed();
         println!("n = {:2} took {:2}.{:09} seconds, count = {}", n, end_time.as_secs(), end_time.subsec_nanos(), count);
