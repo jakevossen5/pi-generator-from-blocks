@@ -12,6 +12,13 @@ paper](https://www.maths.tcd.ie/~lebed/Galperin.%20Playing%20pool%20with%20pi.pd
 
 ## Usage
 
+### From Homebrew
+
+You can install the executable from [my homebrew tap](https://github.com/jakevossen5/homebrew-taps)
+by running `brew install jakevossen5/taps/pi-generator-from-blocks` then running
+`pi-generator-from-blocks` in your terminal.
+
+### From Source
 This program is written in Rust, primarily for speed. First, clone the
 repository using `git clone
 https://github.com/jakevossen5/pi-generator-from-blocks.git` 
