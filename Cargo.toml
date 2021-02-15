@@ -8,4 +8,3 @@ edition = "2018"
 
 [[bin]]
 name = "pi-generator-from-blocks"
-path = "main.rs"
